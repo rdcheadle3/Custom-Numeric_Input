@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, Dimensions } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, Dimensions, SafeAreaView } from 'react-native';
 
 const CustomNumericInput = () => {
   const [inputValue, setInputValue] = useState('');
@@ -12,10 +12,10 @@ const CustomNumericInput = () => {
     setInputValue(currentValue => currentValue.slice(0, -1));
   };
 
-  // Define the buttons including placeholders for empty spaces
   const buttons = [1, 2, 3, 4, 5, 6, 7, 8, 9, 'back', 0, 'return'];
 
   return (
+  <SafeAreaView style={styles.safeArea}>
     <View style={styles.container}>
       <View style={styles.displayArea}>
         <Text style={styles.displayText}>{inputValue}</Text>
@@ -39,15 +39,21 @@ const CustomNumericInput = () => {
         ))}
       </View>
     </View>
-  );
+  </SafeAreaView>
+);
 }
 
 const styles = StyleSheet.create({
-  container: {
+  safeArea: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    backgroundColor: '#fff', // Or any other background color you prefer
   },
+  container: {
+  flex: 1,
+  justifyContent: 'flex-start', // Align items to the start
+  alignItems: 'center',
+  paddingTop: 30, // Adjust top padding as needed
+},
   displayArea: {
     width: '80%',
     height: 50,
