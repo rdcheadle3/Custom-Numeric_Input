@@ -1,11 +1,16 @@
-# Sample Snack app
+# Custom Numeric Input Component
 
-Open the `App.js` file to start writing some code. You can preview the changes directly on your phone or tablet by scanning the **QR code** or use the iOS or Android emulators. When you're done, click **Save** and share the link!
+## Overview
 
-When you're ready to see everything that Expo provides (or if you want to use your own editor) you can **Download** your project and use it with [expo cli](https://docs.expo.dev/get-started/installation/#expo-cli)).
+This project contains a custom numeric input component designed for React Native applications. The component was created to address the limitations and inconsistencies of the native numeric keypads on different platforms, specifically iOS and Android. The goal was to provide a uniform and user-friendly numeric input experience across all devices and platforms.
 
-All projects created in Snack are publicly available, so you can easily share the link to this project via link, or embed it on a web page with the `<>` button.
+## Features
 
-If you're having problems, you can tweet to us [@expo](https://twitter.com/expo) or ask in our [forums](https://forums.expo.dev/c/expo-dev-tools/61) or [Discord](https://chat.expo.dev/).
+- **Cross-Platform Compatibility**: Works seamlessly on iOS, Android, and web platforms.
+- **User-Friendly Interface**: Features a clear and intuitive interface, making it easy for users to input numbers.
+- **Customizable Appearance**: Designed with customization in mind, allowing easy adjustments to fit the styling of different applications.
+- **Reusable Component**: Can be easily integrated into various React Native projects.
 
-Snack is Open Source. You can find the code on the [GitHub repo](https://github.com/expo/snack).
+## Contributions
+
+Please feel free to make improvements.
